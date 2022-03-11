@@ -241,10 +241,10 @@ for train, test in kf.split(X):
     X_test = X.iloc[test]
     Y_train = Y.iloc[train]
     Y_test = Y.iloc[test]
-    random_forest = GradientBoostingClassifier(n_estimators=10)
-    random_forest.fit(X_train, Y_train)
-    preds_test = random_forest.predict_proba(X_test)[:, 1]
-    preds_train = random_forest.predict_proba(X_train)[:, 1]
+    gradient_boosting = GradientBoostingClassifier(n_estimators=10)
+    gradient_boosting.fit(X_train, Y_train)
+    preds_test = gradient_boosting.predict_proba(X_test)[:, 1]
+    preds_train = gradient_boosting.predict_proba(X_train)[:, 1]
     
     finalscore += roc_auc_score(Y_test, preds_test)
     trainscore += roc_auc_score(Y_train, preds_train)
