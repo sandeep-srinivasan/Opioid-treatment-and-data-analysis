@@ -5,7 +5,7 @@ By analyzing and visualizing the relationship between Heroin as the primary drug
 
 ![image](https://user-images.githubusercontent.com/42225976/157986067-218d0956-1d9e-4790-806f-26e1f1c7a71f.png)
 
-Have used k-fold cross validation as 3 to check the results of different models on the datset.
+Have used k-fold cross validation as 3 to check the results of different models on the dataset.
 
 The confusion matrix using logistic regression after fitting the model is,
 
